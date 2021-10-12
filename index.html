@@ -265,7 +265,7 @@
 	</div>
 
 
-	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
+	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_1.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row animate-box">
@@ -359,6 +359,47 @@
 		</div>
 	</div>
 
+	<div id="fh5co-services" class="fh5co-bg" style="background-image:url(images/gallery-8.jpg);">
+		<div class="container">
+			
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Amplop Digital</h2>
+					<p>
+						Doa Restu anda merupakan karunia yang sangat berarti bagi kami
+						<br>
+						Dan Jika memberi adalah ungkapan tanda kasih anda
+					</p>
+					
+				</div>
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-10 col-12 col-md-offset-1">
+							<div class="col-md-6  col-md-offset-3 text-center">
+								<div class="event-wrap animate-box">						
+									<img src="images/bni.png" height="80px" style="margin-bottom: 20px;">
+									<div class="event-col">	
+										<input onclick="myFunction()" type="text" class="form-control text-center" style="background-color: none!important" id="myInput" value="0839180568" placeholder="" readonly>
+										<small id="helpId" class="form-text text-sm text-muted">Klik untuk menyalin nomer rekening</small>
+									</div>
+									<br>
+									<p><b>a/n Jahrah</b></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
 	
 
 	<footer id="fh5co-footer" role="contentinfo">
@@ -436,6 +477,21 @@
         day: d.getDate(),
         enableUtc: false
     });
+
+	function myFunction() {
+		/* Get the text field */
+		var copyText = document.getElementById("myInput");
+
+		/* Select the text field */
+		copyText.select();
+		copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+		/* Copy the text inside the text field */
+		navigator.clipboard.writeText(copyText.value);
+
+		/* Alert the copied text */
+		alert("Copied the text: " + copyText.value);
+	}
 </script>
 
 	</body>
